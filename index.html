@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6f2a26d215.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --background-color: #FFF;
+            --foreground-color: #000;
+            --header-text-color: #000;
+            --sub-header-text-color: #444;
+            --primary-color: #000;
+            --default-color: #444;
+            --link-color: #0000EE;
+            --selection-color: #FFF;
+        }
+    </style>
+    <link id="theme-link" rel="stylesheet" href="/themes/vintage.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <div>
+            <div>profile</div>
+            <nav>
+                <div>
+                    <span>change mood:</span>
+                    <span class="circle vintage" onclick="applyTheme('vintage')">vintage</span>
+                    <span class="circle retro" onclick="applyTheme('retro')">retro</span>
+                    <span class="circle neon" onclick="applyTheme('neon')">neon</span>
+                    <span class="circle contrast" onclick="applyTheme('contrast')">contrast</span>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div id="banner">
+            <h1 id="banner-title">Sumit Man</h1>
+            <h2 id="banner-subtitle">Web Developer</h2>
+            <p id="banner-description">10 years of work exp as an ic and a lead, creates libraries and exp building e-commerce websites</p>
+            <div id="social">
+                <a href="https://www.linkedin.com/in/sumitman/" target="_blank"><i class="icon fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/summitmman" target="_blank"><i class="icon fa-brands fa-github"></i></a>
+                <a href="https://medium.com/@summitmman" target="_blank"><i class="icon fa-brands fa-medium"></i></a>
+                <a href="https://stackblitz.com/@summitmman" target="_blank"><i class="icon fa-solid fa-bolt"></i></a>
+            </div>
+        </div>
+        <main>
+            <section>
+                <h2 class="sticky-header">Introduction</h2>
+                <p class="my-0">Software developer with 10+ years of experience specializing in frontend development. Led a team of 10+ developers, architected and built the frontend for a loosely coupled e-commerce website, and created a dynamic page builder and component libraries using React, Vue 3, TypeScript, NodeJS and MySQL. Optimized performance across desktop and mobile WebView applications. Full-stack proficient, with experience collaborating with US-based clients.</p>
+            </section>
+            <section>
+                <h2 class="sticky-header">Skills</h2>
+                <div class="pill-container mb-0 mt-3">
+                    <span class="pill animate">
+                        <i class="icon fa-brands fa-react"></i>
+                        React
+                    </span>
+                    <span class="pill animate">
+                        <i class="icon fa-brands fa-vuejs"></i>
+                        Vue
+                    </span>
+                    <span class="pill animate">
+                        <i class="icon fa-solid fa-t"></i>
+                        Typescript
+                    </span>
+                    <span class="pill animate">
+                        <i class="icon fa-brands fa-node"></i>
+                        Node
+                    </span>
+                    <span class="pill animate">
+                        <i class="icon fa-solid fa-database"></i>
+                        MySQL
+                    </span>
+                    <span class="pill dashed animate">
+                        <i class="icon fa-brands fa-angular"></i>
+                        Angular
+                    </span>
+                    <span class="pill dashed animate">
+                        <i class="icon fa-solid fa-c"></i>
+                        C#
+                    </span>
+                    <span class="pill dashed animate">
+                        <i class="icon fa-solid fa-database"></i>
+                        MSSQL
+                    </span>
+                </div>
+            </section>
+            <section>
+                <h2 class="sticky-header">Work Experience</h2>
+                <div class="timeline work-exp-timeline">
+                    <div class="timeline-item">
+                        <div id="paytm" class="work-experience">
+                            <div class="header">
+                                <div class="years">4 yrs</div>
+                                <div class="position">
+                                    Senior Technical Lead <a class="company link" target="_blank" href="https://www.paytm.com/">Paytm</a>
+                                </div>
+                                <div class="tenure">
+                                    <span class="dates">Jun 2020 - present</span>
+                                    <span class="location">Bangalore, India</span>
+                                </div>
+                            </div>
+                            <p class="description">Paytm is a consumer facing payments application in India. It also acts like an aggregator for products such as insurance, ticketing, e-commerce, etc</p>
+                            <ul class="expand">
+                                <li>Joined as a Senior Software Engineer and promoted to Technical Lead and then Senior Technical Lead in 3 years</li>
+                                <li>Architected a loosely coupled group of applications, built an in-house component, utility, JSON driven dynamic form creator and a rule engine library in Vue, Typescript bundled through Vite</li>
+                                <li>Setup a backend for frontend architecture for a no code architecture in React, Typescript and Node-NestJs with MySQL and admin panels in Python-Django for usage by non-technical stakeholders</li>
+                                <li>Decoupled a monolithic repository in order to gain improvements in maintainability, developer experience, resiliency and time to market</li>
+                                <li>Improved page load times by 3 seconds for the public facing SPA resulting in better conversion ratio</li>
+                                <li>Managed a team of 10+ developers, which includes scrum planning, UI design review, task assignment, code reviews and mentoring</li>
+                            </ul>
+                            <div class="tech">
+                                <span class="pill">React</span>
+                                <span class="pill">Vue</span>
+                                <span class="pill">Typescript</span>
+                                <span class="pill">Node</span>
+                                <span class="pill">MySQL</span>
+                                <span class="pill dashed expand">Redis</span>
+                                <span class="pill dashed expand">Nuxt</span>
+                                <span class="pill dashed expand">Strapi</span>
+                                <span class="pill dashed expand">Rollup</span>
+                                <span class="pill dashed expand">Devops</span>
+                                <span class="pill dashed expand">Bitbucket pipeline</span>
+                            </div>
+                            <div class="footer">
+                                <span class="details contract" onclick="toggleExpand('paytm')">Know more</span>
+                                <span class="details expand" onclick="toggleExpand('paytm')">Keep it brief</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div id="coverfox" class="work-experience">
+                            <div class="header">
+                                <div class="years">2 yrs</div>
+                                <div class="position">
+                                    Senior Software Developer <a class="company link" target="_blank" href="https://www.coverfox.com/">Coverfox</a>
+                                </div>
+                                <div class="tenure">
+                                    <span class="dates">Dec 2018 - Jun 2020</span>
+                                    <span class="location">Mumbai, India</span>
+                                </div>
+                            </div>
+                            <p class="description">Coverfox is an insurance broker which guides consumers and provides a DIY portal to buy and renew insurance</p>
+                            <ul class="expand">
+                                <li>Shared ownership of ULIP insurance product frontend along with another lead on desktop and mobile web</li>
+                                <li>Created foundation project structure and standardized merge strategies and release processes to cater to dynamic requirements</li>
+                                <li>Created many complex, generic and plug-and-play UI components with UX in mind. Eg: Data tables with infinite scroll, User input field optimized for entering amount with suggestions, etc</li>
+                                <li>Created AMP pages for SEO and faster load times</li>
+                            </ul>
+                            <div class="tech">
+                                <span class="pill">Vue</span>
+                                <span class="pill">Typescript</span>
+                                <span class="pill">AMP</span>
+                                <span class="pill dashed expand">Rollup</span>
+                                <span class="pill dashed expand">Gitlab CI/CD</span>
+                            </div>
+                            <div class="footer">
+                                <span class="details contract" onclick="toggleExpand('coverfox')">Know more</span>
+                                <span class="details expand" onclick="toggleExpand('coverfox')">Keep it brief</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div id="ivp" class="work-experience">
+                            <div class="header">
+                                <div class="years">4 yrs</div>
+                                <div class="position">
+                                    Software Engineer <a class="company link" target="_blank" href="https://www.ivp.in/">IVP</a>
+                                </div>
+                                <div class="tenure">
+                                    <span class="dates">Jan 2015 - Dec 2018</span>
+                                    <span class="location">Mumbai, India</span>
+                                </div>
+                            </div>
+                            <p class="description">Product and service company which caters to the automation of processes and reporting for Hedge Funds majorly in the US.</p>
+                            <ul class="expand">
+                                <li>Created be-spoke projects for multiple US based Hedge fund firms, including a real-time PnL monitor using websockets</li>
+                                <li>Worked in all aspects of a project from database in MSSQL, backend middleware in .NET Core C# and frontend in Angular with Typescript. Have been a part of the foundation phases of all projects</li>
+                                <li>Created automated reports in SSRS and setup scheduling using VisualCron</li>
+                            </ul>
+                            <div class="tech">
+                                <span class="pill">Angular</span>
+                                <span class="pill">Typescript</span>
+                                <span class="pill">C#</span>
+                                <span class="pill">ASP.NET</span>
+                                <span class="pill">MSSQL</span>
+                                <span class="pill dashed expand">SSRS</span>
+                                <span class="pill dashed expand">Tortoise SVN</span>
+                            </div>
+                            <div class="footer">
+                                <span class="details contract" onclick="toggleExpand('ivp')">Know more</span>
+                                <span class="details expand" onclick="toggleExpand('ivp')">Keep it brief</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="sticky-header">Education</h2>
+                <div class="timeline ml-10">
+                    <div class="timeline-item">
+                        <div class="education">
+                            <div class="degree">Master of Computer Application (M.C.A.)</div>
+                            <div class="university">University of Mumbai</div>
+                            <div class="batch">Batch of 2012-2015</div>
+                            <div class="score">SGPI: 8.54/10</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="education">
+                            <div class="degree">Bachelor of Science in Information Technology (B.Sc.I.T.)</div>
+                            <div class="university">University of Mumbai</div>
+                            <div class="batch">Batch of 2010-2013</div>
+                            <div class="score">First class</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="sticky-header">Language</h2>
+                <p class="my-0">
+                    <span class="pill">English</span>
+                    <span class="pill">Hindi</span>
+                    <span class="pill">Bengali</span>
+                    <span class="pill">Marathi</span>
+                    <span class="pill dashed">Jag lär mig svenska</span>
+                </p>
+            </section>
+            <section>
+                <h2 class="sticky-header">Interests</h2>
+                <p class="pill-container mb-0 mt-3">
+                    <span class="pill animate">
+                        <i class="icon fa-solid fa-person-swimming"></i>
+                        Swimming
+                    </span>
+                    <span class="pill animate">
+                        <i class="icon fa-solid fa-person-walking"></i>
+                        Trekking
+                    </span>
+                    <span class="pill animate">
+                        <i class="icon fa-solid fa-pencil"></i>
+                        Sketching
+                    </span>
+                    <span class="pill animate">
+                        <i class="icon fa-solid fa-bezier-curve"></i>
+                        Digital Art
+                    </span>
+                    <span class="pill animate dashed">
+                        <i class="icon fa-solid fa-film"></i>
+                        Animation
+                    </span>
+                    <span class="pill animate dashed">
+                        <i class="icon fa-solid fa-face-smile"></i>
+                        Sculpting
+                    </span>
+                </p>
+            </section>
+            <section>
+                <h2 class="sticky-header">Volunteer Experience</h2>
+                <div>
+                    <div class="work-experience">
+                        <div class="header">
+                            <div class="position">
+                                Volunteer <a class="company link" target="_blank" href="https://nss.gov.in/">National Service Scheme (N.S.S.)</a>
+                            </div>
+                            <div class="tenure">
+                                <span class="dates">Jan 2010 - Dec 2012</span>
+                                <span class="location">Mumbai, India</span>
+                            </div>
+                        </div>
+                        <p class="description">Volunteered in various activities like constructing washrooms for families in villages, Afforestation in and around the city, Event planning for retirement home events, etc.</p>
+                    </div>
+                    <div class="work-experience">
+                        <div class="header">
+                            <div class="position">
+                                Swimming Coach <a class="company link" target="_blank" href="https://ymcabombay.org/procter-branch-byculla-agripada/">Y.M.C.A. Summer Camp</a>
+                            </div>
+                            <div class="tenure">
+                                <span class="dates">Jan 2011 - Dec 2014</span>
+                                <span class="location">Mumbai, India</span>
+                            </div>
+                        </div>
+                        <p class="description">Taught students between ages 10-18 along with some lifeguarding</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="sticky-header">Ice Breakers</h2>
+                <p class="my-0">
+                    Come talk to me about science, anime, games.
+                </p>
+            </section>
+        </main>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

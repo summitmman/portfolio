@@ -1,0 +1,10 @@
+:root {
+    --background-color: #FFF;
+    --foreground-color: #000;
+    --header-text-color: #000;
+    --sub-header-text-color: #444;
+    --primary-color: #000;
+    --default-color: #444;
+    --link-color: #0000EE;
+    --selection-color: #FFF;
+}
